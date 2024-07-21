@@ -1,11 +1,12 @@
 .telo {
   background-color: rgb(37, 35, 35);
-  height: 3300px;
+  height: 1100px;
   width: 1652px;
-  margin-left: 286px;
+  margin-left: 20px;
   margin-top: 0px;
-  overflow: scroll;
+  margin-left: 286px;
 }
+
 
 .flexovi {
   height: 183px;
@@ -34,11 +35,11 @@
 
 .treci-flex {
   display: flex;
-  height: 3000px;
+  height: 1200px;
   margin-top: 0px;
   z-index: 1;
-  margin-left: 35px;
   flex-direction: column;
+  text-align: center;
 }
 /* Prvi fleks */
 .logo {
@@ -125,17 +126,17 @@
   }
 }
 
-.tekme {
-  text-decoration: none;
-  width: 227.5px;
-}
-
 .klikni-tekst {
   font-size: 32px;
   margin-top: 10px;
   font-family: Segoe UI;
   text-align: center;
   color: rgb(197, 152, 53);
+}
+
+.tekme {
+  text-decoration: none;
+  width: 227.5px;
 }
 
 .klikni:hover {
@@ -154,9 +155,9 @@
 }
 
 .tooltip-div:hover {
-  background-color: rgb(145, 139, 128);
-  transition: 0.7s;
- }
+ background-color: rgb(145, 139, 128);
+ transition: 0.7s;
+}
 
 .tooltip-statistika {
   display: flex;
@@ -186,98 +187,26 @@
 }
 
 /* Treći fleks */
-.container {
-  max-width: 1000px;
-  margin-left: 280px;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+.test {
+  color: white;
+  font-size: 50px;
 }
 
-h2 {
-  font-size: 26px;
-  margin: 20px 0;
-  text-align: center;
-  small {
-    font-size: 0.5em;
-  }
+.sub-flex-1 {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
 }
 
-.responsive-table {
-  li {
-    border-radius: 3px;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  }
-
-  .table-header {
-    background-color: #95A5A6;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-  }
-  .table-row {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-    margin-bottom: 4px;
-  }
-  .table-row-4 {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-    margin-bottom: 0.5px;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    border-bottom-color: rgb(145, 139, 128)
-  }
-  .col-1 {
-    flex-basis: 10%;
-  }
-  .col-2 {
-    flex-basis: 40%;
-  }
-  .col-3 {
-    flex-basis: 25%;
-  }
-  .col-4 {
-    flex-basis: 25%;
-  }
-  
-  @media all and (max-width: 767px) {
-    .table-header {
-      display: none;
-    }
-    .table-row{
-      
-    }
-    li {
-      display: block;
-    }
-    .col {
-      
-      flex-basis: 100%;
-      
-    }
-    .col {
-      display: flex;
-      padding: 10px 0;
-      &:before {
-        color: #6C7A89;
-        padding-right: 10px;
-        content: attr(data-label);
-        flex-basis: 50%;
-        text-align: right;
-      }
-    }
-  }
+.sub-flex-2 {
+  height: 460px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
 }
+
+.sub-flex-3 {
+  height: 200px;
+}
+
+/* Paragrafovi trecheg fleksa */

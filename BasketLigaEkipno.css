@@ -37,7 +37,7 @@
   height: 3000px;
   margin-top: 0px;
   z-index: 1;
-  margin-left: 35px;
+  margin-left: 0px;
   flex-direction: column;
 }
 /* Prvi fleks */
@@ -188,8 +188,8 @@
 /* Treći fleks */
 .container {
   max-width: 1000px;
-  margin-left: 280px;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 35px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -217,17 +217,19 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    width: 480px;
+    width: 950px;
     height: 20px;
-    margin-left: 66px;
+    margin-left: 65px;
+    margin-right: 20px;
   }
   .table-row {
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    width: 480px;
+    width: 950px;
     height: 20px;
-    margin-left: 66px;
+    margin-left: 65px;
     margin-bottom: 4px;
+    margin-right: 20px;
   }
   .table-row-4 {
     background-color: #ffffff;
@@ -241,16 +243,25 @@ h2 {
     border-bottom-color: rgb(145, 139, 128)
   }
   .col-1 {
-    flex-basis: 10%;
+    flex-basis: 18%;
   }
   .col-2 {
-    flex-basis: 40%;
+    flex-basis: 10%;
   }
   .col-3 {
-    flex-basis: 25%;
+    flex-basis: 13%;
   }
   .col-4 {
-    flex-basis: 25%;
+    flex-basis: 13%;
+  }
+  .col-5 {
+    flex-basis: 13%;
+  }
+  .col-6 {
+    flex-basis: 14%;
+  }
+  .col-7 {
+    flex-basis: 16%;
   }
   
   @media all and (max-width: 767px) {

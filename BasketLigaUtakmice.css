@@ -1,9 +1,10 @@
+
 .telo {
   background-color: rgb(37, 35, 35);
   height: 3300px;
   width: 1652px;
-  margin-left: 286px;
   margin-top: 0px;
+  margin-left: 286px;
   overflow: scroll;
 }
 
@@ -186,98 +187,83 @@
 }
 
 /* Treći fleks */
-.container {
-  max-width: 1000px;
-  margin-left: 280px;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+
+.utakmica-div {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  width: 680px;
+  margin-left: 300px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
-h2 {
-  font-size: 26px;
-  margin: 20px 0;
-  text-align: center;
-  small {
-    font-size: 0.5em;
-  }
+.utakmica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 65px;
+  width: 680px;
+  background-color: rgba(219, 219, 219, 0.877);
+  color: black;
+  font-size: 40px;
+  font-family: Segoe UI;
+  margin-top: 2px;
 }
 
-.responsive-table {
-  li {
-    border-radius: 3px;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  }
+.utakmica-red {
+  height: 65px;
+  width: 680px;
+  background-color: rgba(219, 219, 219, 0.877);
+  color: black;
+  font-size: 40px;
+  font-family: Segoe UI;
+}
 
-  .table-header {
-    background-color: #95A5A6;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-  }
-  .table-row {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-    margin-bottom: 4px;
-  }
-  .table-row-4 {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-    width: 480px;
-    height: 20px;
-    margin-left: 66px;
-    margin-bottom: 0.5px;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    border-bottom-color: rgb(145, 139, 128)
-  }
-  .col-1 {
-    flex-basis: 10%;
-  }
-  .col-2 {
-    flex-basis: 40%;
-  }
-  .col-3 {
-    flex-basis: 25%;
-  }
-  .col-4 {
-    flex-basis: 25%;
-  }
-  
-  @media all and (max-width: 767px) {
-    .table-header {
-      display: none;
-    }
-    .table-row{
-      
-    }
-    li {
-      display: block;
-    }
-    .col {
-      
-      flex-basis: 100%;
-      
-    }
-    .col {
-      display: flex;
-      padding: 10px 0;
-      &:before {
-        color: #6C7A89;
-        padding-right: 10px;
-        content: attr(data-label);
-        flex-basis: 50%;
-        text-align: right;
-      }
-    }
-  }
+.home-away {
+  height: 65px;
+  flex: 1;
+  background-color: rgba(219, 219, 219, 0.877);
+  color: black;
+  font-size: 40px;
+  font-family: Segoe UI;
+}
+
+.rezultat {
+  height: 55px;
+  width: 100px;
+  background-color: lightcoral;
+  color: black;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 40px;
+  font-family: Segoe UI;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: brown;
+  border-width: 0.8px;
+  margin-right: 10px;
+}
+
+.polufinale-div {
+  height: 195px;
+  width: 680px;
+  margin-left: 300px;
+  margin-top: 80px;
+}
+
+.finale-div {
+  height: 130px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.home {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.away {
+  margin-left: 173px;
+  margin-top: 5px;
 }
