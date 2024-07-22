@@ -1,12 +1,12 @@
-
 .telo {
   background-color: rgb(37, 35, 35);
-  height: 3300px;
+  height: 1100px;
   width: 1652px;
+  margin-left: 20px;
   margin-top: 0px;
   margin-left: 286px;
-  overflow: scroll;
 }
+
 
 .flexovi {
   height: 183px;
@@ -35,10 +35,9 @@
 
 .treci-flex {
   display: flex;
-  height: 3000px;
+  height: 1200px;
   margin-top: 0px;
   z-index: 1;
-  margin-left: 35px;
   flex-direction: column;
 }
 /* Prvi fleks */
@@ -126,17 +125,17 @@
   }
 }
 
-.tekme {
-  text-decoration: none;
-  width: 227.5px;
-}
-
 .klikni-tekst {
   font-size: 32px;
   margin-top: 10px;
   font-family: Segoe UI;
   text-align: center;
   color: rgb(197, 152, 53);
+}
+
+.tekme {
+  text-decoration: none;
+  width: 227.5px;
 }
 
 .klikni:hover {
@@ -155,9 +154,9 @@
 }
 
 .tooltip-div:hover {
-  background-color: rgb(145, 139, 128);
-  transition: 0.7s;
- }
+ background-color: rgb(145, 139, 128);
+ transition: 0.7s;
+}
 
 .tooltip-statistika {
   display: flex;
@@ -186,97 +185,89 @@
   opacity: 0;
 }
 
-/* Treći fleks */
-
-.utakmica-div {
-  display: flex;
-  flex-direction: column;
-  height: 330px;
-  width: 680px;
-  margin-left: 300px;
-  margin-top: 10px;
-  margin-bottom: 2px;
+* {
+  box-sizing: border-box;
 }
 
-.utakmica {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 65px;
-  width: 680px;
-  background-color: rgba(219, 219, 219, 0.877);
-  color: black;
-  font-size: 40px;
-  font-family: Segoe UI;
-  margin-top: 2px;
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
 }
 
-.utakmica-red {
-  height: 65px;
-  width: 680px;
-  background-color: rgba(219, 219, 219, 0.877);
-  color: black;
-  font-size: 40px;
-  font-family: Segoe UI;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.home-away {
-  height: 65px;
-  flex: 1;
-  background-color: rgba(219, 219, 219, 0.877);
-  color: black;
-  font-size: 30px;
-  font-family: Segoe UI;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
-.rezultat {
-  height: 55px;
-  width: 100px;
-  background-color: lightcoral;
-  color: black;
-  margin-top: 5px;
-  margin-left: 2px;
-  font-size: 40px;
-  font-family: Segoe UI;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: brown;
-  border-width: 0.8px;
-  margin-right: 1px;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.polufinale-div {
-  height: 195px;
-  width: 680px;
-  margin-left: 300px;
-  margin-top: 80px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.finale-div {
-  height: 130px;
-  margin-left: 300px;
-  margin-top: 50px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.home {
-  margin-left: 5px;
-  margin-top: 10px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.away {
-  margin-left: 133px;
-  margin-top: 5px;
-  margin-top: 10px;
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
 
-.profichi {
-  margin-left: 63px;
-  margin-top: 5px;
-  margin-top: 10px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.grchichi {
-  margin-left: 193px;
-  margin-top: 5px;
-  margin-top: 10px;
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
